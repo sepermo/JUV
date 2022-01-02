@@ -1,0 +1,120 @@
+@font-face {
+	font-family: "LibreFranklin-Light";
+	src:url('fonts/LibreFranklin-Light.ttf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*Tipo de leta y configuración basica de letra*/
+
+body {
+	font-family: "LibreFranklin-Italic",arial,georgia,times;
+	color: #333;
+	font-size: 1.5em;
+	line-height: 1.3em;
+	overflow-x: hidden;
+}
+
+/*Comienzo del menu se le da el tamaño y se centra*/
+
+.container {
+	width: 	100%;
+	margin: 0 auto;
+}
+
+/*Distacimiento y color de la letra del menu*/
+
+.header {
+	color: 	#000;
+	padding: 0.45em;
+	margin-right: 100px;
+/*	por si lo quiero poner flotante*/
+/*	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;*/
+}
+
+.header a {
+	color: #000;
+	text-decoration: none;
+}
+
+/*Aca separamos el logo y aliniamos la letra con el logo*/
+
+.logo-nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.logo img {
+	width: 40%;
+}
+
+.navigation ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+/* Se transforma para poder darle caractericas a la lista */
+
+.navigation ul li a {
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		color: #000;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 0.7em;
+}
+
+.navigation ul li a:hover {
+	border-bottom: 2px solid #F26B83;
+	padding-bottom: 5px;
+}
+
+.main {
+	padding: 4em;
+}
+
+.container h1 {
+	text-align: center;
+	font-size: 2.5em;
+}
+.container p {
+	text-align: center;
+	padding-top: 25px;
+	color: #3A3C40;
+
+}
+
+.container img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+/*header video*/
+
+.container_video{
+	position: relative;
+	height: 100vh;
+}
+
+
+.video_container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
